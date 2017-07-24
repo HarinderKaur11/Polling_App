@@ -1,0 +1,47 @@
+<head>
+	<meta charset="utf-8">
+	<title>My Polling App</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				{{>pollForm}}
+			</div>
+		</div>
+	</div>
+
+
+	<div class="poll">
+		{{#each polls}}
+			{{>poll}}
+		{{/each}}
+	</div>
+</body>
+
+<template name="pollForm">
+	<form>
+		<div class="form-group">
+			<label>Question</label>
+			<input type="text" name="question" class="form-control" placeholder="Your question here..">
+		</div>
+
+		<div class="form-group">
+			<label>Choice #1</label>
+			<input type="text" name="choice1" class="form-control" placeholder="Choice 1 here..">
+		</div>
+
+		<div class="form-group">
+			<label>Choice #2</label>
+			<input type="text" name="choice2" class="form-control" placeholder="Choice 2 here..">
+		</div>
+
+		<div class="form-group">
+			<label>Choice #3</label>
+			<input type="text" name="choice3" class="form-control" placeholder="Choice 3 here..">
+		</div>
+
+		<button type="submit" id="pollButton" class="btn btn-lg btn-primary btn-block">Create Poll</button>
+	</form>
+</template>
