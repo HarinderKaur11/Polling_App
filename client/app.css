@@ -11,3 +11,16 @@
 #pollButton{
 	background-color: #4CAF50;
 }
+
+body  {
+  padding-top:50px; 
+}
+.polls  {
+  display:center;
+  flex-flow:row wrap;
+  justify-content:center;
+}
+.poll   {
+  width:50%;
+  margin:20px;
+}
